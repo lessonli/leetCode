@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  /**
+   * @param {number[]} nums
+   * @param {number} target
+   * @return {number[]}
+   * 我的做法
+   */
+  let  twoSum1 = function(nums, target) {
+    let result = []
+    for(let i=0;i<nums.length;i++){
+      for(let j=i+1;j<nums.length;j++){
+        let res = nums[i]+nums[j]
+        if(res===target){
+          result[0] =i
+          result[1] = j
+          return result
+        }
+      }
+    }
+    return ''
+  };
+/*大佬的写法*/
+  var twoSum2 = function(nums, target) {
+    const diff = {};
+    const len = nums.length;
+    for (let i = 0; i < len; i++) {
+      if (diff[target - nums[i]] !== undefined) {
+        return [diff[target - nums[i]],i]
+      }
+      diff[nums[i]] = i;
+    }
+  };
+
+
+  let nums = [2,7,11,15]
+  let target = [9]
+  console.log(twoSum1(nums, target));
+
+</script>
+</body>
+</html>
