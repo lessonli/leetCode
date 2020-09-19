@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script>
+
   /**
    * @param {number[]} nums
    * @param {number} target
@@ -71,7 +64,7 @@
               3:4
           }
           // console.log(diff)
-          console.log(i,diff[target - nums[i]] )
+          // console.log(i,diff[target - nums[i]] )
           if(diff[target - nums[i]] !==undefined){
               console.log(diff[target - nums[i]])
              return  [diff[target-nums[i]],i]
@@ -86,6 +79,3 @@
   let target = 10
   console.log(twoSum3(nums, target));
 
-</script>
-</body>
-</html>

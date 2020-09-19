@@ -1,0 +1,35 @@
+{
+  "name": "leetCode",
+  "version": "1.0.0",
+  "description": "我的leetCode 之路\r + 小白一枚开启leetCode 之路，每一题后面都会跟上大佬的做法 吸取经验查找不足",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lessonli/leetCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lessonli/leetCode/issues"
+  },
+  "homepage": "https://github.com/lessonli/leetCode#readme",
+  "dependencies": {
+    "css-loader": "^4.3.0",
+    "html-webpack-plugin": "^4.4.1",
+    "style-loader": "^1.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
